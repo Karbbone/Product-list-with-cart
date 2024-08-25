@@ -10,6 +10,7 @@ $weight-bold: 700;
 
 :root {
   --red: hsl(14, 86%, 42%);
+  --red-hover: hsl(14, 86%, 32%);
   --green: hsl(159, 69%, 38%);
   --rose50: hsl(20, 50%, 98%);
   --rose100: hsl(13, 31%, 94%);
@@ -58,6 +59,13 @@ body {
   }
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 .main-section {
   background-color: var(--rose50);
   border: 1px solid white;
@@ -92,4 +100,16 @@ body {
   color: var(--red);
   font-weight: $weight-medium;
   margin: 0 0;
+}
+.cart-button {
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--red);
+  height: 35px;
+  color: var(--rose50);
+  font-weight: $weight-medium;
+  cursor: pointer;
+}
+.cart-button:hover {
+  background-color: var(--red-hover);
 }
