@@ -1,0 +1,95 @@
+@import "normalize.css";
+@import url(https://fonts.google.com/specimen/Red+Hat+Text);
+
+$mobile: 375px;
+$desktop: 1440px;
+$font-family: "Red Hat Text", sans-serif;
+$weight-regular: 400;
+$weight-medium: 600;
+$weight-bold: 700;
+
+:root {
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --rose50: hsl(20, 50%, 98%);
+  --rose100: hsl(13, 31%, 94%);
+  --rose300: hsl(14, 25%, 72%);
+  --rose400: hsl(7, 20%, 60%);
+  --rose500: hsl(12, 20%, 44%);
+  --rose900: hsl(14, 65%, 9%);
+}
+
+body {
+  background-color: var(--red);
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: calc(1em * 0.625);
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  background-color: lightgray;
+  color: var(--rose900);
+  font-family: $font-family;
+  font-size: 11px;
+  font-weight: $weight-regular;
+
+  &.active {
+    overflow-y: hidden;
+  }
+
+  #wrapper {
+    flex: 1 0 auto;
+  }
+
+  #footer {
+    flex-shrink: 0;
+  }
+}
+
+.main-section {
+  background-color: var(--rose50);
+  border: 1px solid white;
+  padding: 40px 60px;
+  display: flex;
+  gap: 20px;
+}
+.desserts {
+  flex: 0 0 70%;
+}
+
+.cart {
+  flex: 0 0 30%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: $weight-medium;
+  margin: 0 0;
+}
+
+.cart-title {
+  font-size: 18px;
+  color: var(--red);
+  font-weight: $weight-medium;
+  margin: 0 0;
+}

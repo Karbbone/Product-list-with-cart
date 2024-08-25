@@ -1,0 +1,19 @@
+{
+  "name": "product-list-with-cart",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "watch": "sass --watch --style=compressed --no-source-map sass/main.scss ./style.css"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.77.8"
+  }
+}
