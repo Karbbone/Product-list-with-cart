@@ -128,3 +128,13 @@ button {
 .cart-span-bold {
   font-weight: $weight-bold;
 }
+
+.cart-order-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-order-total-price {
+  font-weight: $weight-bold;
+  font-size: 20px;
+}
