@@ -97,44 +97,4 @@ button {
   font-weight: $weight-medium;
   margin: 0 0;
 }
-
-.cart-title {
-  font-size: 22px;
-  color: var(--red);
-  font-weight: $weight-medium;
-  margin: 0 0;
-}
-.cart-button {
-  width: 100%;
-  border-radius: 20px;
-  background-color: var(--red);
-  height: 40px;
-  color: var(--rose50);
-  font-weight: $weight-medium;
-  cursor: pointer;
-}
-.cart-button:hover {
-  background-color: var(--red-hover);
-}
-.cart-notification-carbon {
-  background-color: rgb(235, 235, 235);
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border-radius: 10px;
-}
-.cart-span-bold {
-  font-weight: $weight-bold;
-}
-
-.cart-order-total {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cart-order-total-price {
-  font-weight: 900;
-  font-size: 20px;
-}
+@import "cart-section";
